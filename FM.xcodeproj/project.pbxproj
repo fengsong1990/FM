@@ -3,27 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AAE01A0F64FCEB0A95B1493 /* Pods_FM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039C053C46F892F5E18CFDCB /* Pods_FM.framework */; };
 		FC4F75D22456C79D003FEE96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F75D12456C79D003FEE96 /* AppDelegate.swift */; };
-		FC4F75D42456C79D003FEE96 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F75D32456C79D003FEE96 /* SceneDelegate.swift */; };
-		FC4F75D62456C79D003FEE96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F75D52456C79D003FEE96 /* ViewController.swift */; };
 		FC4F75D92456C79D003FEE96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4F75D72456C79D003FEE96 /* Main.storyboard */; };
 		FC4F75DB2456C79F003FEE96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC4F75DA2456C79F003FEE96 /* Assets.xcassets */; };
 		FC4F75DE2456C79F003FEE96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4F75DC2456C79F003FEE96 /* LaunchScreen.storyboard */; };
+		FC4F75EE2456CF82003FEE96 /* FMHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F75ED2456CF81003FEE96 /* FMHomeController.swift */; };
+		FC4F75F02456CF9D003FEE96 /* FMListenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F75EF2456CF9D003FEE96 /* FMListenController.swift */; };
+		FC4F75F22456CFB9003FEE96 /* FMPlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F75F12456CFB9003FEE96 /* FMPlayController.swift */; };
+		FC4F75F42456CFED003FEE96 /* FMFindController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F75F32456CFED003FEE96 /* FMFindController.swift */; };
+		FC4F75F62456D000003FEE96 /* FMMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F75F52456D000003FEE96 /* FMMineController.swift */; };
+		FC4F75F92456DCEC003FEE96 /* FMBasicBarItemContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F75F82456DCEC003FEE96 /* FMBasicBarItemContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		039C053C46F892F5E18CFDCB /* Pods_FM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31640C8FE7B194FD3E4F6913 /* Pods-FM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FM.release.xcconfig"; path = "Target Support Files/Pods-FM/Pods-FM.release.xcconfig"; sourceTree = "<group>"; };
+		A9D76A22892381328154723E /* Pods-FM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FM.debug.xcconfig"; path = "Target Support Files/Pods-FM/Pods-FM.debug.xcconfig"; sourceTree = "<group>"; };
 		FC4F75CE2456C79D003FEE96 /* FM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4F75D12456C79D003FEE96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC4F75D32456C79D003FEE96 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FC4F75D52456C79D003FEE96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC4F75D82456C79D003FEE96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC4F75DA2456C79F003FEE96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC4F75DD2456C79F003FEE96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC4F75DF2456C79F003FEE96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC4F75ED2456CF81003FEE96 /* FMHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeController.swift; sourceTree = "<group>"; };
+		FC4F75EF2456CF9D003FEE96 /* FMListenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMListenController.swift; sourceTree = "<group>"; };
+		FC4F75F12456CFB9003FEE96 /* FMPlayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMPlayController.swift; sourceTree = "<group>"; };
+		FC4F75F32456CFED003FEE96 /* FMFindController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMFindController.swift; sourceTree = "<group>"; };
+		FC4F75F52456D000003FEE96 /* FMMineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMMineController.swift; sourceTree = "<group>"; };
+		FC4F75F82456DCEC003FEE96 /* FMBasicBarItemContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMBasicBarItemContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AAE01A0F64FCEB0A95B1493 /* Pods_FM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA568654B8CC1C8C72A6B2D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				039C053C46F892F5E18CFDCB /* Pods_FM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D833146863366AF5A8540385 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9D76A22892381328154723E /* Pods-FM.debug.xcconfig */,
+				31640C8FE7B194FD3E4F6913 /* Pods-FM.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FC4F75C52456C79D003FEE96 = {
 			isa = PBXGroup;
 			children = (
 				FC4F75D02456C79D003FEE96 /* FM */,
 				FC4F75CF2456C79D003FEE96 /* Products */,
+				D833146863366AF5A8540385 /* Pods */,
+				CA568654B8CC1C8C72A6B2D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +89,74 @@
 			isa = PBXGroup;
 			children = (
 				FC4F75D12456C79D003FEE96 /* AppDelegate.swift */,
-				FC4F75D32456C79D003FEE96 /* SceneDelegate.swift */,
-				FC4F75D52456C79D003FEE96 /* ViewController.swift */,
+				FC4F75E52456CA01003FEE96 /* Controller */,
 				FC4F75D72456C79D003FEE96 /* Main.storyboard */,
 				FC4F75DA2456C79F003FEE96 /* Assets.xcassets */,
 				FC4F75DC2456C79F003FEE96 /* LaunchScreen.storyboard */,
 				FC4F75DF2456C79F003FEE96 /* Info.plist */,
 			);
 			path = FM;
+			sourceTree = "<group>";
+		};
+		FC4F75E52456CA01003FEE96 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC4F75F72456DC96003FEE96 /* Mian */,
+				FC4F75EA2456CA79003FEE96 /* Mine(我的) */,
+				FC4F75E92456CA67003FEE96 /* Find(发现) */,
+				FC4F75E82456CA4B003FEE96 /* Play(播放) */,
+				FC4F75E72456CA30003FEE96 /* Listen(我听) */,
+				FC4F75E62456CA17003FEE96 /* Home(首页) */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC4F75E62456CA17003FEE96 /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				FC4F75ED2456CF81003FEE96 /* FMHomeController.swift */,
+			);
+			path = "Home(首页)";
+			sourceTree = "<group>";
+		};
+		FC4F75E72456CA30003FEE96 /* Listen(我听) */ = {
+			isa = PBXGroup;
+			children = (
+				FC4F75EF2456CF9D003FEE96 /* FMListenController.swift */,
+			);
+			path = "Listen(我听)";
+			sourceTree = "<group>";
+		};
+		FC4F75E82456CA4B003FEE96 /* Play(播放) */ = {
+			isa = PBXGroup;
+			children = (
+				FC4F75F12456CFB9003FEE96 /* FMPlayController.swift */,
+			);
+			path = "Play(播放)";
+			sourceTree = "<group>";
+		};
+		FC4F75E92456CA67003FEE96 /* Find(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				FC4F75F32456CFED003FEE96 /* FMFindController.swift */,
+			);
+			path = "Find(发现)";
+			sourceTree = "<group>";
+		};
+		FC4F75EA2456CA79003FEE96 /* Mine(我的) */ = {
+			isa = PBXGroup;
+			children = (
+				FC4F75F52456D000003FEE96 /* FMMineController.swift */,
+			);
+			path = "Mine(我的)";
+			sourceTree = "<group>";
+		};
+		FC4F75F72456DC96003FEE96 /* Mian */ = {
+			isa = PBXGroup;
+			children = (
+				FC4F75F82456DCEC003FEE96 /* FMBasicBarItemContentView.swift */,
+			);
+			path = Mian;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC4F75E22456C79F003FEE96 /* Build configuration list for PBXNativeTarget "FM" */;
 			buildPhases = (
+				5E51C8FE1EE223D2E877549E /* [CP] Check Pods Manifest.lock */,
 				FC4F75CA2456C79D003FEE96 /* Sources */,
 				FC4F75CB2456C79D003FEE96 /* Frameworks */,
 				FC4F75CC2456C79D003FEE96 /* Resources */,
+				DD4437D07CDC044DDFCAFEAB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +227,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5E51C8FE1EE223D2E877549E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD4437D07CDC044DDFCAFEAB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FM/Pods-FM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FM/Pods-FM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FM/Pods-FM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FC4F75CA2456C79D003FEE96 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC4F75D62456C79D003FEE96 /* ViewController.swift in Sources */,
+				FC4F75F02456CF9D003FEE96 /* FMListenController.swift in Sources */,
 				FC4F75D22456C79D003FEE96 /* AppDelegate.swift in Sources */,
-				FC4F75D42456C79D003FEE96 /* SceneDelegate.swift in Sources */,
+				FC4F75F22456CFB9003FEE96 /* FMPlayController.swift in Sources */,
+				FC4F75F42456CFED003FEE96 /* FMFindController.swift in Sources */,
+				FC4F75F92456DCEC003FEE96 /* FMBasicBarItemContentView.swift in Sources */,
+				FC4F75EE2456CF82003FEE96 /* FMHomeController.swift in Sources */,
+				FC4F75F62456D000003FEE96 /* FMMineController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +410,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,9 +422,12 @@
 		};
 		FC4F75E32456C79F003FEE96 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9D76A22892381328154723E /* Pods-FM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development: Zhengping Xi (7ADM7YLFJ4)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5995X5N4TW;
 				INFOPLIST_FILE = FM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -292,6 +435,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fengsong.FM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = All_id;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,9 +443,12 @@
 		};
 		FC4F75E42456C79F003FEE96 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31640C8FE7B194FD3E4F6913 /* Pods-FM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development: Zhengping Xi (7ADM7YLFJ4)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5995X5N4TW;
 				INFOPLIST_FILE = FM/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +456,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fengsong.FM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = All_id;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
