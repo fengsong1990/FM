@@ -18,6 +18,20 @@
 		FC4F75F42456CFED003FEE96 /* FMFindController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F75F32456CFED003FEE96 /* FMFindController.swift */; };
 		FC4F75F62456D000003FEE96 /* FMMineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F75F52456D000003FEE96 /* FMMineController.swift */; };
 		FC4F75F92456DCEC003FEE96 /* FMBasicBarItemContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F75F82456DCEC003FEE96 /* FMBasicBarItemContentView.swift */; };
+		FC4F75FB2457C70A003FEE96 /* FMNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F75FA2457C70A003FEE96 /* FMNavigationController.swift */; };
+		FC4F76042457C9D5003FEE96 /* WRNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F75FE2457C9D5003FEE96 /* WRNavigationBar.swift */; };
+		FC4F76052457C9D5003FEE96 /* WRCustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F75FF2457C9D5003FEE96 /* WRCustomNavigationBar.swift */; };
+		FC4F76062457C9D5003FEE96 /* WRProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F76012457C9D5003FEE96 /* WRProxy.swift */; };
+		FC4F76072457C9D5003FEE96 /* WRCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F76022457C9D5003FEE96 /* WRCycleScrollView.swift */; };
+		FC4F76082457C9D5003FEE96 /* WRCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F76032457C9D5003FEE96 /* WRCycleCell.swift */; };
+		FC4F760A2457CA1C003FEE96 /* FMHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F76092457CA1C003FEE96 /* FMHeader.swift */; };
+		FC4F76112457CDAA003FEE96 /* FMHomeRecommendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F76102457CDAA003FEE96 /* FMHomeRecommendController.swift */; };
+		FC4F76132457CDDE003FEE96 /* FMHomeClassifyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F76122457CDDE003FEE96 /* FMHomeClassifyController.swift */; };
+		FC4F76152457CE00003FEE96 /* FMHomeVIPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F76142457CE00003FEE96 /* FMHomeVIPController.swift */; };
+		FC4F76172457CE14003FEE96 /* FMHomeLiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F76162457CE14003FEE96 /* FMHomeLiveController.swift */; };
+		FC4F76192457CE24003FEE96 /* FMHomeBroadcastController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4F76182457CE24003FEE96 /* FMHomeBroadcastController.swift */; };
+		FCE8569F245810D1007AE35A /* FMHomeVipBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8569E245810D1007AE35A /* FMHomeVipBannerCell.swift */; };
+		FCE856A1245833B6007AE35A /* FMHomeVIPApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE856A0245833B6007AE35A /* FMHomeVIPApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +50,20 @@
 		FC4F75F32456CFED003FEE96 /* FMFindController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMFindController.swift; sourceTree = "<group>"; };
 		FC4F75F52456D000003FEE96 /* FMMineController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMMineController.swift; sourceTree = "<group>"; };
 		FC4F75F82456DCEC003FEE96 /* FMBasicBarItemContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMBasicBarItemContentView.swift; sourceTree = "<group>"; };
+		FC4F75FA2457C70A003FEE96 /* FMNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMNavigationController.swift; sourceTree = "<group>"; };
+		FC4F75FE2457C9D5003FEE96 /* WRNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRNavigationBar.swift; sourceTree = "<group>"; };
+		FC4F75FF2457C9D5003FEE96 /* WRCustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCustomNavigationBar.swift; sourceTree = "<group>"; };
+		FC4F76012457C9D5003FEE96 /* WRProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRProxy.swift; sourceTree = "<group>"; };
+		FC4F76022457C9D5003FEE96 /* WRCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCycleScrollView.swift; sourceTree = "<group>"; };
+		FC4F76032457C9D5003FEE96 /* WRCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WRCycleCell.swift; sourceTree = "<group>"; };
+		FC4F76092457CA1C003FEE96 /* FMHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHeader.swift; sourceTree = "<group>"; };
+		FC4F76102457CDAA003FEE96 /* FMHomeRecommendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeRecommendController.swift; sourceTree = "<group>"; };
+		FC4F76122457CDDE003FEE96 /* FMHomeClassifyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeClassifyController.swift; sourceTree = "<group>"; };
+		FC4F76142457CE00003FEE96 /* FMHomeVIPController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeVIPController.swift; sourceTree = "<group>"; };
+		FC4F76162457CE14003FEE96 /* FMHomeLiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeLiveController.swift; sourceTree = "<group>"; };
+		FC4F76182457CE24003FEE96 /* FMHomeBroadcastController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeBroadcastController.swift; sourceTree = "<group>"; };
+		FCE8569E245810D1007AE35A /* FMHomeVipBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeVipBannerCell.swift; sourceTree = "<group>"; };
+		FCE856A0245833B6007AE35A /* FMHomeVIPApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeVIPApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +129,7 @@
 		FC4F75E52456CA01003FEE96 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FC4F75FC2457C9C3003FEE96 /* Lib */,
 				FC4F75F72456DC96003FEE96 /* Mian */,
 				FC4F75EA2456CA79003FEE96 /* Mine(我的) */,
 				FC4F75E92456CA67003FEE96 /* Find(发现) */,
@@ -115,6 +144,11 @@
 			isa = PBXGroup;
 			children = (
 				FC4F75ED2456CF81003FEE96 /* FMHomeController.swift */,
+				FC4F760F2457CD36003FEE96 /* 推荐 */,
+				FC4F760E2457CD14003FEE96 /* 分类 */,
+				FC4F760D2457CD11003FEE96 /* VIP */,
+				FC4F760C2457CD0E003FEE96 /* 直播 */,
+				FC4F760B2457CD0B003FEE96 /* 广播 */,
 			);
 			path = "Home(首页)";
 			sourceTree = "<group>";
@@ -155,8 +189,96 @@
 			isa = PBXGroup;
 			children = (
 				FC4F75F82456DCEC003FEE96 /* FMBasicBarItemContentView.swift */,
+				FC4F75FA2457C70A003FEE96 /* FMNavigationController.swift */,
+				FC4F76092457CA1C003FEE96 /* FMHeader.swift */,
 			);
 			path = Mian;
+			sourceTree = "<group>";
+		};
+		FC4F75FC2457C9C3003FEE96 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				FC4F75FD2457C9D5003FEE96 /* WRNavigationBar */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		FC4F75FD2457C9D5003FEE96 /* WRNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				FC4F75FE2457C9D5003FEE96 /* WRNavigationBar.swift */,
+				FC4F75FF2457C9D5003FEE96 /* WRCustomNavigationBar.swift */,
+				FC4F76002457C9D5003FEE96 /* WRCycleScrollView */,
+			);
+			path = WRNavigationBar;
+			sourceTree = "<group>";
+		};
+		FC4F76002457C9D5003FEE96 /* WRCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				FC4F76012457C9D5003FEE96 /* WRProxy.swift */,
+				FC4F76022457C9D5003FEE96 /* WRCycleScrollView.swift */,
+				FC4F76032457C9D5003FEE96 /* WRCycleCell.swift */,
+			);
+			path = WRCycleScrollView;
+			sourceTree = "<group>";
+		};
+		FC4F760B2457CD0B003FEE96 /* 广播 */ = {
+			isa = PBXGroup;
+			children = (
+				FC4F76182457CE24003FEE96 /* FMHomeBroadcastController.swift */,
+			);
+			path = "广播";
+			sourceTree = "<group>";
+		};
+		FC4F760C2457CD0E003FEE96 /* 直播 */ = {
+			isa = PBXGroup;
+			children = (
+				FC4F76162457CE14003FEE96 /* FMHomeLiveController.swift */,
+			);
+			path = "直播";
+			sourceTree = "<group>";
+		};
+		FC4F760D2457CD11003FEE96 /* VIP */ = {
+			isa = PBXGroup;
+			children = (
+				FCE856A0245833B6007AE35A /* FMHomeVIPApi.swift */,
+				FC4F76142457CE00003FEE96 /* FMHomeVIPController.swift */,
+				FCE8569C24580D29007AE35A /* View */,
+			);
+			path = VIP;
+			sourceTree = "<group>";
+		};
+		FC4F760E2457CD14003FEE96 /* 分类 */ = {
+			isa = PBXGroup;
+			children = (
+				FC4F76122457CDDE003FEE96 /* FMHomeClassifyController.swift */,
+			);
+			path = "分类";
+			sourceTree = "<group>";
+		};
+		FC4F760F2457CD36003FEE96 /* 推荐 */ = {
+			isa = PBXGroup;
+			children = (
+				FC4F76102457CDAA003FEE96 /* FMHomeRecommendController.swift */,
+			);
+			path = "推荐";
+			sourceTree = "<group>";
+		};
+		FCE8569C24580D29007AE35A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FCE8569D24580D3B007AE35A /* 轮播(Banner) */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FCE8569D24580D3B007AE35A /* 轮播(Banner) */ = {
+			isa = PBXGroup;
+			children = (
+				FCE8569E245810D1007AE35A /* FMHomeVipBannerCell.swift */,
+			);
+			path = "轮播(Banner)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,13 +396,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC4F76062457C9D5003FEE96 /* WRProxy.swift in Sources */,
 				FC4F75F02456CF9D003FEE96 /* FMListenController.swift in Sources */,
 				FC4F75D22456C79D003FEE96 /* AppDelegate.swift in Sources */,
 				FC4F75F22456CFB9003FEE96 /* FMPlayController.swift in Sources */,
+				FC4F76112457CDAA003FEE96 /* FMHomeRecommendController.swift in Sources */,
+				FCE8569F245810D1007AE35A /* FMHomeVipBannerCell.swift in Sources */,
+				FC4F76052457C9D5003FEE96 /* WRCustomNavigationBar.swift in Sources */,
 				FC4F75F42456CFED003FEE96 /* FMFindController.swift in Sources */,
+				FC4F76152457CE00003FEE96 /* FMHomeVIPController.swift in Sources */,
+				FC4F76132457CDDE003FEE96 /* FMHomeClassifyController.swift in Sources */,
 				FC4F75F92456DCEC003FEE96 /* FMBasicBarItemContentView.swift in Sources */,
 				FC4F75EE2456CF82003FEE96 /* FMHomeController.swift in Sources */,
+				FC4F76042457C9D5003FEE96 /* WRNavigationBar.swift in Sources */,
+				FC4F76072457C9D5003FEE96 /* WRCycleScrollView.swift in Sources */,
+				FC4F76082457C9D5003FEE96 /* WRCycleCell.swift in Sources */,
+				FC4F760A2457CA1C003FEE96 /* FMHeader.swift in Sources */,
+				FC4F76172457CE14003FEE96 /* FMHomeLiveController.swift in Sources */,
+				FC4F75FB2457C70A003FEE96 /* FMNavigationController.swift in Sources */,
+				FCE856A1245833B6007AE35A /* FMHomeVIPApi.swift in Sources */,
 				FC4F75F62456D000003FEE96 /* FMMineController.swift in Sources */,
+				FC4F76192457CE24003FEE96 /* FMHomeBroadcastController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
