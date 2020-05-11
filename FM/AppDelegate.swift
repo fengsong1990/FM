@@ -15,11 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        let tabbar = setUpTabBar(delegate: self as? UITabBarControllerDelegate)
+        
         
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
-        self.window?.rootViewController = tabbar
+//        let tabbar = setUpTabBar(delegate: self as? UITabBarControllerDelegate)
+//        self.window?.rootViewController = tabbar
+        
+        let homeNav = setUpItem(FMHomeController(), title: "首页", imageName: "home", selectedImageName: "home_1")
+        self.window?.rootViewController = homeNav
         self.window?.makeKeyAndVisible()
         
         return true
@@ -48,8 +52,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         itemVC.tabBarItem = ESTabBarItem.init(contentView, title: title, image: UIImage(named: imageName), selectedImage: UIImage(named: selectedImageName))
         let vcNav = FMNavigationController.init(rootViewController: itemVC)
         return vcNav;
+        
     }
     
+    func printLog<T>(message: T,file: String = #file,method: String = #function,line: Int = #line){
+        print("\((file as NSString).lastPathComponent)[\(line)], \(method): \(message)")
+    }
+
 }
 
 

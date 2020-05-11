@@ -13,6 +13,7 @@ class FMNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         setupNavBarAppearence()
     }
     
@@ -28,6 +29,22 @@ class FMNavigationController: UINavigationController {
         // 如果需要设置导航栏底部分割线隐藏，可以在这里统一设置
         WRNavigationBar.defaultShadowImageHidden = true
     }
+}
+
+extension FMNavigationController{
     
+    func navigationBar(_ navigationBar: UINavigationBar, shouldPush item: UINavigationItem) -> Bool {
+        return true
+    }
+    //防止返回的时候奔溃
+    override func navigationBar(_ navigationBar: UINavigationBar, shouldPop item: UINavigationItem) -> Bool {
+        return true
+    }
     
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        if children.count > 0 {
+            viewController.hidesBottomBarWhenPushed = true
+        }
+        super.pushViewController(viewController, animated: animated)
+    }
 }
