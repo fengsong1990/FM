@@ -41,7 +41,7 @@ class FMPlayDetailController: UIViewController {
         return layout
     }()
     private let oneVc = FMPlayDetailIntroController()
-    private let twoVc = FMPlayController()
+    private let twoVc = FMPlayDetailProgramController()
     private lazy var viewControllers: [UIViewController] = {
         return [oneVc, twoVc]
     }()
@@ -108,6 +108,9 @@ class FMPlayDetailController: UIViewController {
             // 传值给简介界面
             self?.oneVc.playDetailAlbumModel = self!.viewModel.playDetailAlbum
             self?.oneVc.playDetailUserModel = self!.viewModel.playDetailUser
+            // 传值给节目界面
+            self?.twoVc.playDetailTracksModel = self!.viewModel.playDetailTracks
+            self?.twoVc.albumId = self!.viewModel.albumId
         }
         
     }
@@ -139,13 +142,13 @@ extension FMPlayDetailController : LTAdvancedScrollViewDelegate {
             self.rightBarButton1.setImage(UIImage(named: "icon_more_n_30x31_"), for: UIControl.State.normal)
             self.rightBarButton2.setImage(UIImage(named: "icon_share_n_30x30_"), for: UIControl.State.normal)
             
-            self.navigationController!.navigationBar.tintColor = UIColor.init(r: 226/255, g: 108/255, b: 77/255)
+            self.navigationController?.navigationBar.tintColor = UIColor.init(r: 226/255, g: 108/255, b: 77/255)
         }else{
             navBarBackgroundAlpha = 0
             self.rightBarButton1.setImage(UIImage(named: "icon_more_h_30x31_"), for: UIControl.State.normal)
             self.rightBarButton2.setImage(UIImage(named: "icon_share_h_30x30_"), for: UIControl.State.normal)
             
-            self.navigationController!.navigationBar.tintColor = UIColor.orange
+            self.navigationController?.navigationBar.tintColor = UIColor.orange
         }
     }
 }

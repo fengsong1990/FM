@@ -23,6 +23,7 @@ class FMPlayViewModel: NSObject {
         self.uid = uid
     }
     
+    static let share = FMPlayViewModel()
     
      var playDetailAlbum:FMPlayDetailAlbumModel?
      var playDetailUser:FMPlayDetailUserModel?
@@ -30,15 +31,20 @@ class FMPlayViewModel: NSObject {
     
      // Mark: -数据源更新
      typealias FMDataBlock = () -> Void
-     var playDetailDataBlock:FMDataBlock?
-    
- 
+     var playDetailDataBlock:FMDataBlock? //播放详情页面数据回调
+     var playBlock:FMDataBlock? //播放页面回调
+    //play
+    var playTrackInfo:FMPlayTrackInfo?
+    var playCommentInfo:[FMPlayCommentInfo]?
+    var userInfo:FMPlayUserInfo?
+    var communityInfo:FMPlayCommunityInfo?
 }
 
 extension FMPlayViewModel{
     ///播放页数据
-    func getPlayDetailData(albumId:Int){
-        FMPlayProvider.request(FMPlayApi.playDetailData(albumId: albumId)) { (result) in
+    func getPlayDetailData(albumId:Int,pageIndex:Int = 1){
+        self.albumId = albumId
+        FMPlayProvider.request(FMPlayApi.playDetailData(albumId: albumId,pageIndex:pageIndex)) { (result) in
             
             switch result{
             case .success(let response):
@@ -83,9 +89,24 @@ extension FMPlayViewModel{
                     let json = JSON(data)
                     printLog(message: json.description)
                     
-                    
-                    
-                    
+                    // 从字符串转换为对象实例
+                    if let playTrackInfo = JSONDeserializer<FMPlayTrackInfo>.deserializeFrom(json: json["trackInfo"].description) {
+                        self.playTrackInfo = playTrackInfo
+                    }
+                    // 从字符串转换为对象实例
+                    if let commentInfo = JSONDeserializer<FMPlayCommentInfoList>.deserializeFrom(json: json["noCacheInfo"]["commentInfo"].description) {
+                        self.playCommentInfo = commentInfo.list
+                    }
+                    // 从字符串转换为对象实例
+                    if let userInfoData = JSONDeserializer<FMPlayUserInfo>.deserializeFrom(json: json["userInfo"].description) {
+                        self.userInfo = userInfoData
+                    }
+                    // 从字符串转换为对象实例
+                    if let communityInfoData = JSONDeserializer<FMPlayCommunityInfo>.deserializeFrom(json: json["noCacheInfo"]["communityInfo"].description) {
+                        self.communityInfo = communityInfoData
+                    }
+                    self.playBlock?()
+                     
                 }catch let error{
                     printLog(message: error.localizedDescription)
                 }

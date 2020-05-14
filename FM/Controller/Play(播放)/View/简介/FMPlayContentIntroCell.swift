@@ -23,6 +23,7 @@ class FMPlayContentIntroCell: UITableViewCell {
         label.font = UIFont.systemFont(ofSize: 15)
         return label
     }()
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setUpUI()
@@ -49,9 +50,7 @@ class FMPlayContentIntroCell: UITableViewCell {
             guard let model = playDetailAlbumModel else {return}
             //self.subLabel.text = model.shortIntro
             self.subLabel.attributedText = FMCustomLabel.attributedText(text: model.intro ?? "", fontValue: 15)
-            
-//            let mutString = NSMutableAttributedString.init(string: model.intro ?? "", attributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize: 15)])
-//            self.subLabel.attributedText = mutString
+
         }
     }
     
@@ -59,10 +58,7 @@ class FMPlayContentIntroCell: UITableViewCell {
         
         let textSize = FMCustomLabel.getTextHeight(text: model?.intro ?? "", fontValue: 15, maxW: FMScreenWidth-30, maxH: 800)
         return textSize.height + 45 + 15 + 2 //多加一点
-        
-        //        let mutString = NSMutableAttributedString.init(string: model?.intro ?? "", attributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize: 15)])
-        //        let mutSize = mutString.boundingRect(with: CGSize.init(width: FMScreenWidth-30, height: 800), options:.usesLineFragmentOrigin , context: nil).size
-        //        return mutSize.height + 45 + 15 + 2 //多加一点
+
     }
     
     required init?(coder aDecoder: NSCoder) {

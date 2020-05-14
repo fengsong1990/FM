@@ -8,7 +8,7 @@
 
 import UIKit
 import ESTabBarController_swift
-
+import AVFoundation
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -26,8 +26,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = homeNav
         self.window?.makeKeyAndVisible()
         
+        
+        // 注册后台播放
+        let session = AVAudioSession.sharedInstance()
+        do {
+            try session.setActive(true)
+            try session.setCategory(.playback)
+        } catch {
+            print(error)
+        }
+        
         return true
     }
+    
     
     ///1.加载tabbar样式
     private func setUpTabBar(delegate:UITabBarControllerDelegate?) -> ESTabBarController {
@@ -62,3 +73,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 
+extension AppDelegate{
+    
+    func applicationWillResignActive(_ application: UIApplication) {
+        printLog(message: "倔强的打出一行字告诉你我要挂起了。。")
+        
+
+    }
+    
+}

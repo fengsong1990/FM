@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0AAE01A0F64FCEB0A95B1493 /* Pods_FM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039C053C46F892F5E18CFDCB /* Pods_FM.framework */; };
+		FC05B2EB246A7F760031E275 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC05B2EA246A7F760031E275 /* AudioToolbox.framework */; };
+		FC05B2FF246CDDC50031E275 /* FMPlayAnchorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC05B2FE246CDDC50031E275 /* FMPlayAnchorCell.swift */; };
 		FC0D6132245A67DA00473637 /* FMRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D6131245A67DA00473637 /* FMRefresh.swift */; };
 		FC0D6134245A6F6D00473637 /* FMHomeVIPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D6133245A6F6D00473637 /* FMHomeVIPModel.swift */; };
 		FC0D6137245AA71200473637 /* FMHomeVipCategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0D6136245AA71200473637 /* FMHomeVipCategoriesCell.swift */; };
@@ -70,12 +72,19 @@
 		FCE8569F245810D1007AE35A /* FMHomeVipBannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE8569E245810D1007AE35A /* FMHomeVipBannerCell.swift */; };
 		FCE856A1245833B6007AE35A /* FMHomeVIPApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE856A0245833B6007AE35A /* FMHomeVIPApi.swift */; };
 		FCE856A32459143E007AE35A /* FMHomeVIPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE856A22459143E007AE35A /* FMHomeVIPViewModel.swift */; };
+		FCF4A8AB246A3734006C57A7 /* FMPlayDetailProgramController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF4A8AA246A3734006C57A7 /* FMPlayDetailProgramController.swift */; };
+		FCF4A8AD246A3A6C006C57A7 /* FMPlayDetailProgramCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF4A8AC246A3A6C006C57A7 /* FMPlayDetailProgramCell.swift */; };
+		FCF4A8AF246A417A006C57A7 /* FMPlayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF4A8AE246A417A006C57A7 /* FMPlayModel.swift */; };
+		FCF4A8B2246A4532006C57A7 /* FMPlayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF4A8B1246A4532006C57A7 /* FMPlayCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		039C053C46F892F5E18CFDCB /* Pods_FM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31640C8FE7B194FD3E4F6913 /* Pods-FM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FM.release.xcconfig"; path = "Target Support Files/Pods-FM/Pods-FM.release.xcconfig"; sourceTree = "<group>"; };
 		A9D76A22892381328154723E /* Pods-FM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FM.debug.xcconfig"; path = "Target Support Files/Pods-FM/Pods-FM.debug.xcconfig"; sourceTree = "<group>"; };
+		FC05B2E9246A7F760031E275 /* FM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FM.entitlements; sourceTree = "<group>"; };
+		FC05B2EA246A7F760031E275 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FC05B2FE246CDDC50031E275 /* FMPlayAnchorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMPlayAnchorCell.swift; sourceTree = "<group>"; };
 		FC0D6131245A67DA00473637 /* FMRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMRefresh.swift; sourceTree = "<group>"; };
 		FC0D6133245A6F6D00473637 /* FMHomeVIPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeVIPModel.swift; sourceTree = "<group>"; };
 		FC0D6136245AA71200473637 /* FMHomeVipCategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeVipCategoriesCell.swift; sourceTree = "<group>"; };
@@ -140,6 +149,10 @@
 		FCE8569E245810D1007AE35A /* FMHomeVipBannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeVipBannerCell.swift; sourceTree = "<group>"; };
 		FCE856A0245833B6007AE35A /* FMHomeVIPApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeVIPApi.swift; sourceTree = "<group>"; };
 		FCE856A22459143E007AE35A /* FMHomeVIPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMHomeVIPViewModel.swift; sourceTree = "<group>"; };
+		FCF4A8AA246A3734006C57A7 /* FMPlayDetailProgramController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMPlayDetailProgramController.swift; sourceTree = "<group>"; };
+		FCF4A8AC246A3A6C006C57A7 /* FMPlayDetailProgramCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMPlayDetailProgramCell.swift; sourceTree = "<group>"; };
+		FCF4A8AE246A417A006C57A7 /* FMPlayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMPlayModel.swift; sourceTree = "<group>"; };
+		FCF4A8B1246A4532006C57A7 /* FMPlayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FMPlayCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AAE01A0F64FCEB0A95B1493 /* Pods_FM.framework in Frameworks */,
+				FC05B2EB246A7F760031E275 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +171,7 @@
 		CA568654B8CC1C8C72A6B2D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FC05B2EA246A7F760031E275 /* AudioToolbox.framework */,
 				039C053C46F892F5E18CFDCB /* Pods_FM.framework */,
 			);
 			name = Frameworks;
@@ -227,6 +242,7 @@
 		FC4F75D02456C79D003FEE96 /* FM */ = {
 			isa = PBXGroup;
 			children = (
+				FC05B2E9246A7F760031E275 /* FM.entitlements */,
 				FC4F75D12456C79D003FEE96 /* AppDelegate.swift */,
 				FC4F75E52456CA01003FEE96 /* Controller */,
 				FC4F75D72456C79D003FEE96 /* Main.storyboard */,
@@ -279,6 +295,7 @@
 				FCD863422468F5C1008C7DB5 /* FMPlayApi.swift */,
 				FCD863402468F554008C7DB5 /* FMPlayViewModel.swift */,
 				FCD863462468FDED008C7DB5 /* FMPlayDetailModel.swift */,
+				FCF4A8AE246A417A006C57A7 /* FMPlayModel.swift */,
 				FCD8633C2468F49A008C7DB5 /* 播放详情 */,
 				FCD8633F2468F530008C7DB5 /* View */,
 			);
@@ -447,6 +464,7 @@
 			children = (
 				FCD863442468FC0E008C7DB5 /* FMPlayDetailController.swift */,
 				FCD8637F24692576008C7DB5 /* FMPlayDetailIntroController.swift */,
+				FCF4A8AA246A3734006C57A7 /* FMPlayDetailProgramController.swift */,
 			);
 			path = "播放详情";
 			sourceTree = "<group>";
@@ -454,9 +472,9 @@
 		FCD8633F2468F530008C7DB5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				FCD8634824690007008C7DB5 /* FMPlayDetailHeaderView.swift */,
-				FCD863812469262F008C7DB5 /* FMPlayContentIntroCell.swift */,
-				FCD86386246926EB008C7DB5 /* FMPlayAnchorIntroCell.swift */,
+				FCF4A8B0246A4513006C57A7 /* 播放器 */,
+				FCF4A8A9246A367F006C57A7 /* 节目 */,
+				FCF4A8A824695AAE006C57A7 /* 简介 */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -505,6 +523,33 @@
 				FCE8569E245810D1007AE35A /* FMHomeVipBannerCell.swift */,
 			);
 			path = "轮播";
+			sourceTree = "<group>";
+		};
+		FCF4A8A824695AAE006C57A7 /* 简介 */ = {
+			isa = PBXGroup;
+			children = (
+				FCD8634824690007008C7DB5 /* FMPlayDetailHeaderView.swift */,
+				FCD863812469262F008C7DB5 /* FMPlayContentIntroCell.swift */,
+				FCD86386246926EB008C7DB5 /* FMPlayAnchorIntroCell.swift */,
+			);
+			path = "简介";
+			sourceTree = "<group>";
+		};
+		FCF4A8A9246A367F006C57A7 /* 节目 */ = {
+			isa = PBXGroup;
+			children = (
+				FCF4A8AC246A3A6C006C57A7 /* FMPlayDetailProgramCell.swift */,
+			);
+			path = "节目";
+			sourceTree = "<group>";
+		};
+		FCF4A8B0246A4513006C57A7 /* 播放器 */ = {
+			isa = PBXGroup;
+			children = (
+				FCF4A8B1246A4532006C57A7 /* FMPlayCell.swift */,
+				FC05B2FE246CDDC50031E275 /* FMPlayAnchorCell.swift */,
+			);
+			path = "播放器";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -625,6 +670,7 @@
 				FCD8638024692576008C7DB5 /* FMPlayDetailIntroController.swift in Sources */,
 				FC0D6139245AA82300473637 /* FMVipCategoryCell.swift in Sources */,
 				FC4F76062457C9D5003FEE96 /* WRProxy.swift in Sources */,
+				FCF4A8B2246A4532006C57A7 /* FMPlayCell.swift in Sources */,
 				FC6A0E722463BDDD0023A72A /* FMHomeRecommendTopBuzzCell.swift in Sources */,
 				FCD8637B2469046A008C7DB5 /* LTPageView.swift in Sources */,
 				FCD863772469046A008C7DB5 /* LTAdvancedManager.swift in Sources */,
@@ -664,14 +710,17 @@
 				FC6A0E7A2463F9EC0023A72A /* FMHomeRecommendHotCell.swift in Sources */,
 				FC6A0E672462AA050023A72A /* FMHomeVIPTypesCell.swift in Sources */,
 				FCE856A32459143E007AE35A /* FMHomeVIPViewModel.swift in Sources */,
+				FCF4A8AD246A3A6C006C57A7 /* FMPlayDetailProgramCell.swift in Sources */,
 				FC0D6141245AC58B00473637 /* FMVipHotCell.swift in Sources */,
 				FC4F76072457C9D5003FEE96 /* WRCycleScrollView.swift in Sources */,
 				FCD8637A2469046A008C7DB5 /* LTPageTitleView.swift in Sources */,
 				FC4F76082457C9D5003FEE96 /* WRCycleCell.swift in Sources */,
 				FC4F760A2457CA1C003FEE96 /* FMHeader.swift in Sources */,
+				FCF4A8AF246A417A006C57A7 /* FMPlayModel.swift in Sources */,
 				FCD863782469046A008C7DB5 /* LTLayout.swift in Sources */,
 				FC4F76172457CE14003FEE96 /* FMHomeLiveController.swift in Sources */,
 				FC0D613F245AC56000473637 /* FMHomeVipHotCell.swift in Sources */,
+				FC05B2FF246CDDC50031E275 /* FMPlayAnchorCell.swift in Sources */,
 				FC6A0E772463E8F80023A72A /* FMHomeRecommendTypesCell.swift in Sources */,
 				FCD8637E2469046A008C7DB5 /* LTTableView.swift in Sources */,
 				FC0D6146245AD20500473637 /* FMHomeVipFooterView.swift in Sources */,
@@ -680,6 +729,7 @@
 				FC4F75F62456D000003FEE96 /* FMMineController.swift in Sources */,
 				FC4F76192457CE24003FEE96 /* FMHomeBroadcastController.swift in Sources */,
 				FCD863822469262F008C7DB5 /* FMPlayContentIntroCell.swift in Sources */,
+				FCF4A8AB246A3734006C57A7 /* FMPlayDetailProgramController.swift in Sources */,
 				FCD8634924690007008C7DB5 /* FMPlayDetailHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -825,6 +875,7 @@
 			baseConfigurationReference = A9D76A22892381328154723E /* Pods-FM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FM/FM.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development: Zhengping Xi (7ADM7YLFJ4)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5995X5N4TW;
@@ -846,6 +897,7 @@
 			baseConfigurationReference = 31640C8FE7B194FD3E4F6913 /* Pods-FM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FM/FM.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development: Zhengping Xi (7ADM7YLFJ4)";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5995X5N4TW;

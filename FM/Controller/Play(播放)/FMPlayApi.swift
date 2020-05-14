@@ -13,7 +13,7 @@ let FMPlayProvider = MoyaProvider<FMPlayApi>()
 
 enum FMPlayApi {
     case fmPlayData(albumId:Int,trackUid:Int, uid:Int)
-    case playDetailData(albumId:Int)//播放页数据
+    case playDetailData(albumId:Int,pageIndex:Int = 0)//播放页数据
     
 }
 
@@ -31,7 +31,7 @@ extension FMPlayApi: TargetType {
         case .fmPlayData(let albumId, let trackUid, let uid):
             return "/mobile/track/v2/playpage/\(trackUid)"
         case .playDetailData(let albumId):
-            return "/mobile/v1/album/ts-1534832680180"
+            return "/mobile/v1/album/ts-1534832680180"//1554297822031
         }
     }
     
@@ -54,13 +54,13 @@ extension FMPlayApi: TargetType {
             "deviceId": UIDevice.current.identifierForVendor!.uuidString] as [String : Any]
             parmeters["albumId"] = albumId
             parmeters["trackUid"] = uid
-            //parmeters["trackUid"] = trackUid
-        case .playDetailData(let albumId):
+            //parmeters["trackUid"] = trackUidlet albumId
+        case .playDetailData(albumId: let albumId, pageIndex: let pageIndex):
             parmeters = [
                 "device":"iPhone",
-                "isAsc":false,
-                "isQueryInvitationBrand":false,
-                "pageSize":20,
+                "isAsc":true,
+                "isQueryInvitationBrand":true,
+                "pageSize":30*pageIndex,
                 "source":4,
                 "ac":"WIFI"]
             parmeters["albumId"] = albumId
